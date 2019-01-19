@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { NodeComponent } from './node.component';
+import { InputBooleanComponent } from '../input-boolean/input-boolean.component';
+import { InputNumberComponent } from '../input-number/input-number.component';
+import { InputStringComponent } from '../input-string/input-string.component';
 
 describe('NodeComponent', () => {
   let component: NodeComponent;
@@ -8,7 +12,13 @@ describe('NodeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [NodeComponent],
+      declarations: [
+        NodeComponent,
+        InputBooleanComponent,
+        InputNumberComponent,
+        InputStringComponent,
+      ],
+      imports: [FormsModule],
     }).compileComponents();
   }));
 

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { NodeContent } from './models/node-content';
+import { NodeContent } from '../../models/node-content';
 
 @Component({
   selector: 'chll-node',
