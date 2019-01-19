@@ -1,0 +1,15 @@
+<div *ngFor="let item of content">
+  <ul style="list-style: none; margin: 0;">
+    <li>
+      <ng-container [ngSwitch]="item.type">
+        <div class="number" *ngSwitchCase="'number'">{{ item.label }}: {{ item.value }}</div>
+        <div class="boolean" *ngSwitchCase="'boolean'">{{ item.label }}: {{ item.value }}</div>
+        <div class="string" *ngSwitchCase="'string'">{{ item.label }}: '{{ item.value }}'</div>
+        <div class="object" *ngSwitchCase="'object'">
+          {{ item.label }}:
+          <chll-node [input]="item.value"></chll-node>
+        </div>
+      </ng-container>
+    </li>
+  </ul>
+</div>
