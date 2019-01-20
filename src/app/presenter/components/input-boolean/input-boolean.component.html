@@ -1,3 +1,10 @@
 <div>
-  <label>{{ label }}: </label> <input type="checkbox" [(ngModel)]="value" />
+  <label class="no-select" (click)="toggleCheckbox()">{{ label }}: </label>
+  <input type="checkbox" [(ngModel)]="value" />
+  <svg id="chk-svg" width="24" height="24" viewBox="0 0 24 24" (click)="toggleCheckbox()">
+    <path
+      *ngIf="value"
+      d="M 10.014234,18.774791 3.6415094,12.045422 5.4245978,10.229419 9.9798214,14.973885 18.356131,6.0754717 20.210593,7.8571861 Z M 22,22 c -18.577044,0 -9.288522,0 0,0 z"
+    />
+  </svg>
 </div>

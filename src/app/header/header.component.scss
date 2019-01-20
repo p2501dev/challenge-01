@@ -1,0 +1,22 @@
+@import './../../scss/variables/colors';
+
+.header {
+  text-align: center;
+  border-top: 5px solid $omni-blue;
+  border-bottom: 5px solid $omni-green;
+  padding: 20px 20px 24px 20px;
+  background-image: linear-gradient(-180deg, rgba(60, 65, 69, 1) 0%, rgba(60, 65, 69, 0.8) 99%);
+
+  h1 {
+    margin: 0;
+  }
+
+  .pre-title {
+    font-size: 0.8rem;
+    color: $gray-dark;
+  }
+
+  .title {
+    color: #fff;
+  }
+}

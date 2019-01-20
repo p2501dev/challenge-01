@@ -1,0 +1,27 @@
+input {
+  margin: 0;
+  overflow: visible;
+  background-color: $gray-light;
+  padding: 0.3rem 0.75rem;
+}
+
+textarea {
+  background-color: #fff;
+  padding: 20px;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin: 0;
+  overflow: visible;
+}
+
+input[type='text'],
+input[type='number'],
+textarea {
+  color: $omni-black;
+  border-radius: 0.25rem;
+  letter-spacing: normal;
+  word-spacing: normal;
+  border: 0;
+}

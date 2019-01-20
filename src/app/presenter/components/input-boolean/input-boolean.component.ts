@@ -7,5 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class InputBooleanComponent {
   @Input() label: string;
-  @Input() value: any;
+  @Input() value: boolean;
+
+  toggleCheckbox() {
+    this.value = !this.value;
+  }
 }

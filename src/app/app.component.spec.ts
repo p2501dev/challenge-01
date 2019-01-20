@@ -7,6 +7,8 @@ import { NodeComponent } from './presenter/components/node/node.component';
 import { InputBooleanComponent } from './presenter/components/input-boolean/input-boolean.component';
 import { InputNumberComponent } from './presenter/components/input-number/input-number.component';
 import { InputStringComponent } from './presenter/components/input-string/input-string.component';
+import { HeaderComponent } from './header/header.component';
+import { FormComponent } from './form/form.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -18,6 +20,8 @@ describe('AppComponent', () => {
         InputBooleanComponent,
         InputNumberComponent,
         InputStringComponent,
+        FormComponent,
+        HeaderComponent,
       ],
       imports: [FormsModule],
     }).compileComponents();

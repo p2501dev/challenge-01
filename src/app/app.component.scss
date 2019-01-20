@@ -1,3 +1,46 @@
-.title {
-  text-align: center;
+@import './../scss/variables/colors';
+
+.form,
+.presenter {
+  overflow: auto;
+  border-radius: 0.25rem;
+}
+
+.form {
+  height: calc(60vh + 40px);
+  margin: 10% 10px 0 25%;
+
+  @media screen and (max-width: 1200px) {
+    margin: 10% 10px 0 10%;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 10px 10px 0 10px;
+    height: calc(30vh + 40px);
+  }
+}
+
+.presenter {
+  background: #fff;
+  height: 60vh;
+  padding: 20px;
+  margin: 10% 25% 0 10px;
+
+  @media screen and (max-width: 1200px) {
+    margin: 10% 10% 0 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 10px 10px 0 10px;
+    height: 44vh;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }

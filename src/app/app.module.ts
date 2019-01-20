@@ -8,6 +8,8 @@ import { NodeComponent } from './presenter/components/node/node.component';
 import { InputNumberComponent } from './presenter/components/input-number/input-number.component';
 import { InputBooleanComponent } from './presenter/components/input-boolean/input-boolean.component';
 import { InputStringComponent } from './presenter/components/input-string/input-string.component';
+import { FormComponent } from './form/form.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { InputStringComponent } from './presenter/components/input-string/input-
     InputNumberComponent,
     InputBooleanComponent,
     InputStringComponent,
+    FormComponent,
+    HeaderComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

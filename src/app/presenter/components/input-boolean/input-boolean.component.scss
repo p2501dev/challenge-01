@@ -1,7 +1,19 @@
-input {
-  margin-left: 0;
+@import './../../../../scss/variables/colors';
+
+input[type='checkbox'] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+  height: 0.1px;
+  width: 0.1px;
 }
 
-label {
-  font-family: 'Courier New', Courier, monospace;
+#chk-svg {
+  background-color: $gray-light;
+  fill: $omni-black;
+  border-radius: 0.25rem;
+  vertical-align: middle;
+  height: 1.6rem;
+  width: 1.6rem;
 }

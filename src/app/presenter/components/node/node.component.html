@@ -1,4 +1,4 @@
-<ul class="list" *ngIf="content">
+<ul *ngIf="content">
   <li *ngFor="let item of content">
     <ng-container [ngSwitch]="item.type">
       <chll-input-boolean
