@@ -1,4 +1,4 @@
-<ul *ngIf="content">
+<ul *ngIf="content.length > 0">
   <li *ngFor="let item of content">
     <ng-container [ngSwitch]="item.type">
       <chll-input-boolean
@@ -21,7 +21,7 @@
 
       <div *ngSwitchCase="'object'">
         <label>{{ item.label }}:</label>
-        <chll-node [input]="item.value"></chll-node>
+        <chll-node [value]="item.value"></chll-node>
       </div>
     </ng-container>
   </li>

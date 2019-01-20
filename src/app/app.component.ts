@@ -10,7 +10,7 @@ export class AppComponent {
   object: any;
 
   constructor() {
-    this.text = `
+    const initialInput = `
 {
   "a": true,
   "b": 1,
@@ -31,7 +31,7 @@ export class AppComponent {
 }
     `;
 
-    this.object = JSON.parse(this.text);
+    this.object = JSON.parse(initialInput);
     this.text = JSON.stringify(this.object, undefined, 2);
   }
 }
