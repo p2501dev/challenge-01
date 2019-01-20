@@ -16,8 +16,7 @@ textarea {
   overflow: visible;
 }
 
-input[type='text'],
-input[type='number'],
+.textinput,
 textarea {
   color: $omni-black;
   border-radius: 0.25rem;

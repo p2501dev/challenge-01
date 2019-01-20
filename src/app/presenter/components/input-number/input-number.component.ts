@@ -8,4 +8,12 @@ import { Component, Input } from '@angular/core';
 export class InputNumberComponent {
   @Input() label: string;
   @Input() value: number;
+
+  increment() {
+    this.value += 1;
+  }
+
+  decrement() {
+    this.value -= 1;
+  }
 }

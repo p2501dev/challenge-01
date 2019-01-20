@@ -1,4 +1,30 @@
-<div>
+<div class="container">
   <label class="no-select">{{ label }}: </label>
-  <input class="input border" type="number" [(ngModel)]="value" />
+  <div class="container">
+    <svg
+      id="minus"
+      x="0px"
+      y="0px"
+      width="50px"
+      height="50px"
+      viewBox="0 0 50 50"
+      (click)="decrement()"
+    >
+      <path d="M 14.999,26.999 V 23 h 20.002 v 3.999 H 14.999 z" />
+    </svg>
+    <input class="input" type="string" [(ngModel)]="value" />
+    <svg
+      id="plus"
+      x="0px"
+      y="0px"
+      width="50px"
+      height="50px"
+      viewBox="0 0 50 50"
+      (click)="increment()"
+    >
+      <path
+        d="M 35.001, 26.999 H 27 V 35 h -3.999 v -8.001 h -8.002 V 23 h 8.002 v -8 H 27 v 8 h 8.001 V 26.999 z"
+      />
+    </svg>
+  </div>
 </div>

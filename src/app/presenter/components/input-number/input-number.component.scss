@@ -1,0 +1,30 @@
+@import './../../../../scss/variables/colors';
+
+.container {
+  display: inline;
+}
+
+.input {
+  border: 0;
+  text-align: right;
+  width: calc(165px - 3.2rem - 24px);
+  vertical-align: middle;
+}
+
+#minus,
+#plus {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: $gray-light;
+  fill: $omni-black;
+  // border-radius: 0.25rem;
+  vertical-align: middle;
+}
+
+#minus {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+#plus {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
