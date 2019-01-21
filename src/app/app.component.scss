@@ -7,6 +7,11 @@ button {
   background: #fff;
   color: $omni-black;
   padding: 4px 12px;
+  margin-right: 4px;
+
+  :last-child {
+    margin-right: 0;
+  }
 }
 
 .toolbar {

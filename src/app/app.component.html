@@ -1,6 +1,9 @@
 <chll-header></chll-header>
 
-<div class="toolbar"><button (click)="formatFormData()">format</button></div>
+<div class="toolbar">
+  <button (click)="formatFormData()">format</button>
+  <button (click)="randomizeFormData()">randomize</button>
+</div>
 
 <div class="wrapper">
   <chll-form class="form" [value]="text"></chll-form>
