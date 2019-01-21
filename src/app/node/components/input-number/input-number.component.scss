@@ -7,8 +7,10 @@
 .input {
   border: 0;
   text-align: right;
+  height: 1rem;
   width: calc(165px - 3.2rem - 24px);
   vertical-align: middle;
+  -moz-appearance: textfield;
 }
 
 #minus,

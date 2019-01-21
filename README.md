@@ -25,5 +25,4 @@ Use the latest version of Angular (no additional frameworks/libraries) and TypeS
 
 Use three types of inputs to display the values: check boxes for booleans, input type numbers for numbers and text boxes for strings.
 
-Additional: try to style the UI as best as you can (again, no additional frameworks/libraries, however you can use a preprocessor, like for example
-SCSS).
+Additional: try to style the UI as best as you can (again, no additional frameworks/libraries, however you can use a preprocessor, like for example SCSS).

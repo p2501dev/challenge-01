@@ -1,11 +1,26 @@
 {
   "name": "challenge",
   "version": "0.0.0",
+  "description": "Frontend challenge - render an arbitrary deeply nested object",
+  "keywords": [
+    "Angular",
+    "Typescript",
+    "Challange"
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "Hannes Wolf",
+    "email": "p2501hw@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/p2501dev/challenge-01.git"
   },
-  "homepage": "https://github.com/p2501dev/challenge-01/blob/master/README.md",
+  "homepage": "https://p2501dev.github.io/challenge-01/",
+  "bugs": {
+    "url": "https://github.com/p2501dev/challenge-01/issues/new"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -17,7 +32,6 @@
     "lint:stylelint": "stylelint --config=.stylelintrc --fix './**/*.scss'",
     "lint": "npm-run-all --sequential lint:*"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^7.2.1",
     "@angular/common": "^7.2.1",

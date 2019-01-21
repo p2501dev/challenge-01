@@ -1,5 +1,26 @@
 @import './../scss/variables/colors';
 
+button {
+  border-radius: 0.25rem;
+  outline: none;
+  border: 0;
+  background: #fff;
+  color: $omni-black;
+  padding: 4px 12px;
+}
+
+.toolbar {
+  margin: 5vw 12vw 0 12vw;
+
+  @media screen and (max-width: 1200px) {
+    margin: 5vw 5vw 0 5vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 10px 10px 0 10px;
+  }
+}
+
 .form,
 .presenter {
   overflow: auto;
@@ -8,10 +29,10 @@
 
 .form {
   height: calc(60vh + 40px);
-  margin: 10% 10px 0 25%;
+  margin: 20px 10px 0 12vw;
 
   @media screen and (max-width: 1200px) {
-    margin: 10% 10px 0 10%;
+    margin: 20px 10px 0 5vw;
   }
 
   @media screen and (max-width: 768px) {
@@ -24,10 +45,10 @@
   background: #fff;
   height: 60vh;
   padding: 20px;
-  margin: 10% 25% 0 10px;
+  margin: 20px 12vw 0 10px;
 
   @media screen and (max-width: 1200px) {
-    margin: 10% 10% 0 10px;
+    margin: 20px 5vw 0 10px;
   }
 
   @media screen and (max-width: 768px) {

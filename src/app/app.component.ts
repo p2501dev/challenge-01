@@ -1,37 +1,42 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
+
+import { Subscription } from 'rxjs';
+import { throttleTime } from 'rxjs/operators';
+
+import { SharedService } from './services/shared.service';
 
 @Component({
   selector: 'chll-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnDestroy {
   text: string;
   object: any;
 
-  constructor() {
-    const initialInput = `
-{
-  "a": true,
-  "b": 1,
-  "c": "Hello, World!",
-  "d": {
-    "e": "I am a nested string!",
-    "f": {
-      "g": {
-        "h": {
-          "i": "So am I!",
-          "j": false,
-          "k": 123,
-          "l": "And I am last!"
-        }
-      }
-    }
-  }
-}
-    `;
+  private readonly subscriptions = new Subscription();
 
-    this.object = JSON.parse(initialInput);
+  constructor(private sharedService: SharedService) {
+    const sub = this.sharedService
+      .getFromData()
+      .pipe(throttleTime(250))
+      .subscribe(data => this.convertFormData(data));
+    this.subscriptions.add(sub);
+  }
+
+  ngOnDestroy(): void {
+    this.subscriptions.unsubscribe();
+  }
+
+  formatFormData(): void {
     this.text = JSON.stringify(this.object, undefined, 2);
+  }
+
+  convertFormData(data: string): void {
+    try {
+      this.object = JSON.parse(data);
+    } catch {
+      return;
+    }
   }
 }

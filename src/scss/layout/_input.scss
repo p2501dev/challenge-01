@@ -5,15 +5,8 @@ input {
   padding: 0.3rem 0.75rem;
 }
 
-textarea {
-  background-color: #fff;
-  padding: 20px;
-  height: calc(100% - 40px);
-  width: calc(100% - 40px);
-  font-size: 0.8rem;
-  line-height: 1.4rem;
-  margin: 0;
-  overflow: visible;
+.textinput {
+  height: 1rem;
 }
 
 .textinput,
